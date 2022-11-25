@@ -44,9 +44,14 @@ Cents = ""
 Case "One"
 Cents = " AND ONE CENT"
 Case Else
-Cents = " AND CENTS " & Cents
+
+' put CENTS to the rear
+Cents = " AND " & Cents & " CENTS"
 End Select
+
+' put CENTS to the rear
 SpellNumber = "SAY " & Dollars & Cents & " ONLY"
+
 SpellNumber = UCase(SpellNumber)
 End Function
 '*******************************************
